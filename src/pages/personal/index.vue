@@ -13,7 +13,7 @@
     </div>
     <div class="content">
       <ul>
-        <li class="list-item">
+        <li class="list-item" @click="navigateTo(naviUrl.setting)">
           <div class="left">
             <i class="icon icon-gear"></i>
             <span>设置</span>
@@ -22,7 +22,7 @@
             <i class="icon-more"></i>
           </div>
         </li>
-        <li class="list-item">
+        <li class="list-item" @click="navigateTo(naviUrl.notify)">
           <div class="left">
             <i class="icon icon-bell"></i>
             <span>消息通知</span>
@@ -32,7 +32,7 @@
             <i class="icon-more"></i>
           </div>
         </li>
-        <li class="list-item">
+        <li class="list-item" @click="navigateTo(naviUrl.mytimeline)">
           <div class="left">
             <i class="icon icon-paw"></i>
             <span>我的时间轴</span>
@@ -41,7 +41,7 @@
             <i class="icon-more"></i>
           </div>
         </li>
-        <li class="list-item">
+        <li class="list-item" @click="navigateTo(naviUrl.mustknown)">
           <div class="left">
             <i class="icon icon-information"></i>
             <span>须知</span>
@@ -61,7 +61,13 @@ export default {
     return {
       userInfo: {},
       hasUserInfo: false,
-      canIUse: wx.canIUse('button.open-type.getUserInfo')
+      canIUse: wx.canIUse('button.open-type.getUserInfo'),
+      naviUrl: {
+        setting: './setting/main',
+        notify: './notify/main',
+        mytimeline: './mytimeline/main',
+        mustknown: './mustknown/main'
+      }
     }
   },
   methods: {
@@ -72,6 +78,12 @@ export default {
           that.userInfo = res.userInfo
           that.hasUserInfo = true
         }
+      })
+    },
+    // 跳转页面
+    navigateTo (url) {
+      wx.navigateTo({
+        url: url
       })
     }
   },
@@ -95,7 +107,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  @import '../../../static/font/iconfont.css';
+  @import '../../../static/font/iconfont.css'
   .personal-container
     height: 100vh
     font-size: 16px

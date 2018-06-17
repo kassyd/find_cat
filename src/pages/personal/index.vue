@@ -80,6 +80,7 @@ export default {
         }
       })
     },
+    // 跳转页面
     navigateTo (url) {
       wx.navigateTo({
         url: url
@@ -106,7 +107,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  @import '../../../static/font/iconfont.css';
+  @import '../../../static/font/iconfont.css'
   .personal-container
     height: 100vh
     font-size: 16px

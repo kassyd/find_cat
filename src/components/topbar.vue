@@ -1,7 +1,7 @@
 <template>
   <div class="topbar">
     <div class="left">
-      <img class="avatar" src="">
+      <img class="avatar" :src="commentdata.avatarLink">
       <p class="title">
         <span class="em va-m">阳叔</span>
         <span class="va-m">的</span>
@@ -17,7 +17,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: ['commentdata']
+}
 </script>
 
 <style lang="sass" scoped>

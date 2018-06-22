@@ -2,20 +2,20 @@
   <div class="container">
 
     <navigator open-type="switchTab"/>
-    <!-- <footer>
-      <a href="/pages/test/main">
-        <img src="../../../static/img/find-cat.png" alt="">
-        <p>寻找猫</p>
-      </a>
-      <a href="#">
-        <img src="../../../static/img/community.png" alt="">
-        <p>铲屎官社区</p>
-      </a>
-      <a href="#">
-        <img src="../../../static/img/self-center.png" alt="">
-        <p>个人中心</p>
-      </a>
-    </footer> -->
+    <!--<footer>-->
+      <!--<a href="/paSearchCattest/main">-->
+        <!--<img src="../../../static/img/find-cat.png" alt="">-->
+        <!--<p>寻找猫</p>-->
+      <!--</a>-->
+      <!--<a href="#">-->
+        <!--<img src="../../../static/img/community.png" alt="">-->
+        <!--<p>铲屎官社区</p>-->
+      <!--</a>-->
+      <!--<a href="#">-->
+        <!--<img src="../../../static/img/self-center.png" alt="">-->
+        <!--<p>个人中心</p>-->
+      <!--</a>-->
+    <!--</footer>-->
   </div>
 </template>
 
@@ -58,7 +58,7 @@ footer {
   height: 150rpx;
   display: flex;
   > a {
-    flex:1; 
+    flex:1;
     text-align: center;
     > img {
       margin-top: 30rpx;

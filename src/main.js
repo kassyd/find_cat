@@ -18,16 +18,19 @@ export default {
       'pages/personal/setting/main',
       'pages/personal/notify/main',
       'pages/personal/mytimeline/main',
-      'pages/personal/mustknown/main'
+      'pages/personal/mustknown/main',
+      'pages/SearchCat/main',
+      'pages/SearchCat/CatMessage/main',
+      'pages/test1/main'
     ],
     tabBar: {
       backgroundColor: '#fff',
       list: [{
-        pagePath: 'pages/test/main',
+        pagePath: 'pages/SearchCat/main',
         iconPath: '/static/img/find-cat.png',
         text: '寻找猫'
       }, {
-        pagePath: 'pages/index/main',
+        pagePath: 'pages/test1/main',
         iconPath: '/static/img/community.png',
         text: '铲屎官社区'
       }, {
